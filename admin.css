@@ -1,0 +1,40 @@
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  min-height: 100vh;
+}
+.layout header { grid-area: header; font-size: 20px; font-weight: bold; }
+.layout aside { grid-area: sidebar; background: #1f203d; padding: 16px; }
+.layout aside a {
+  display: block;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.layout main { grid-area: main; padding: 20px; min-width: 0; }
+.layout footer { grid-area: footer; }
+.ringkasan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.ringkasan .kartu { width: auto; }
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+  .layout aside { display: flex; flex-wrap: wrap; gap: 16px; }
+  .layout aside a { margin-bottom: 0; }
+  .ringkasan { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Kafe ASSOR</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img src="img/logo-assor.png" alt="Logo Kafe ASSOR" width="80">
+    <h1>Kafe ASSOR</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="menu.html">Menu</a>
+      <a href="pesan.html">Pesan</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Menu Kami</h2>
+      <div class="filter">
+        <button type="button" data-filter="semua" class="aktif">Semua</button>
+        <button type="button" data-filter="makanan">Makanan</button>
+        <button type="button" data-filter="minuman">Minuman</button>
+      </div>
+      <div class="daftar-menu">
+      <div class="kartu" data-kategori="makanan">
+        <img src="img/nasi-goreng.jpg" alt="Nasi Goreng Kampung">
+        <h3>Nasi Goreng Kampung</h3>
+        <p>Rp25.000</p>
+        <a class="tombol" href="pesan.html">Pesan</a>
+      </div>
+      <div class="kartu" data-kategori="makanan">
+        <img src="img/ayam-bakar.jpg" alt="Ayam Bakar Papua">
+        <h3>Ayam Bakar Papua</h3>
+        <p>Rp35.000</p>
+        <a class="tombol" href="pesan.html">Pesan</a>
+      </div>
+      <div class="kartu" data-kategori="makanan">
+        <img src="img/mie-goreng.jpg" alt="Mie Goreng Spesial">
+        <h3>Mie Goreng Spesial</h3>
+        <p>Rp22.000</p>
+        <a class="tombol" href="pesan.html">Pesan</a>
+      </div>
+      <div class="kartu" data-kategori="minuman">
+        <img src="img/kopi-susu.jpg" alt="Kopi Susu">
+        <h3>Kopi Susu</h3>
+        <p>Rp20.000</p>
+        <a class="tombol" href="pesan.html">Pesan</a>
+      </div>
+      <div class="kartu" data-kategori="minuman">
+        <img src="img/es-teh.jpg" alt="Es Teh Manis">
+        <h3>Es Teh Manis</h3>
+        <p>Rp8.000</p>
+        <a class="tombol" href="pesan.html">Pesan</a>
+      </div>
+      <div class="kartu" data-kategori="minuman">
+        <img src="img/jus-alpukat.jpg" alt="Jus Alpukat">
+        <h3>Jus Alpukat</h3>
+        <p>Rp18.000</p>
+        <a class="tombol" href="pesan.html">Pesan</a>
+      </div>
+      </div>
+    </section>
+    <section>
+      <h2>Daftar Harga</h2>
+      <div class="tabel-wrap">
+        <table>
+          <thead>
+            <tr><th>No</th><th>Menu</th><th>Kategori</th><th>Harga</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Nasi Goreng Kampung</td><td>Makanan</td><td>25000</td></tr>
+            <tr><td>2</td><td>Ayam Bakar Papua</td><td>Makanan</td><td>35000</td></tr>
+            <tr><td>3</td><td>Mie Goreng Spesial</td><td>Makanan</td><td>22000</td></tr>
+            <tr><td>4</td><td>Kopi Susu</td><td>Minuman</td><td>20000</td></tr>
+            <tr><td>5</td><td>Es Teh Manis</td><td>Minuman</td><td>8000</td></tr>
+            <tr><td>6</td><td>Jus Alpukat</td><td>Minuman</td><td>18000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>&copy; 2026 Kafe ASSOR</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
